@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/contents.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b368023ab0ada558460c961fcfa59892"
+    ></script>
     <link
       rel="stylesheet"
       as="style"
@@ -15,6 +20,7 @@
     />
     <script src="./js/header/header.js"></script>
     <script src="./js/gallery/gallery.js"></script>
+    <script src="./js/map/map.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -87,6 +93,45 @@
         </div>
         <hr />
       </div>
+
+      <div class="map_box">
+        <div class="map_box_text">
+          <p class="map_box_text_top">Where you’ll be</p>
+          <p class="map_box_text_sub">
+            330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+          </p>
+        </div>
+        <div id="map">
+          <div class="custom_zoomcontrol radius_border">
+            <div class="zoom">
+              <span id="zoomInButton"
+                ><img
+                  src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png"
+                  alt="확대"
+              /></span>
+              <span id="zoomOutButton"
+                ><img
+                  src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png"
+                  alt="축소"
+              /></span>
+            </div>
+            <div class="refresh">
+              <span id="resetButton"
+                ><img src="./img/map/refresh.svg" alt="새로고침"
+              /></span>
+              <!-- 새로고침 버튼 추가 -->
+            </div>
+            <div class="full_screen">
+              <span id="full_screen_button"
+                ><img src="./img/map/full_screen.svg" alt="새로고침"
+              /></span>
+              <!-- 새로고침 버튼 추가 -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <span id="resetButton"><img src="./img/refresh.svg" alt="새로고침" /></span>
+    <!-- 새로고침 버튼 추가 -->
   </body>
 </html>
