@@ -93,3 +93,50 @@ a {
 .navbar_menu, .download_box {
     font-size: 16px;
 }
+
+.main_banner {
+}
+
+.main_contents_box {
+    background-color: #F2E9D8;
+    width: 1920px;
+    height: 798px;
+    display: flex;
+    gap: 170px;
+}
+
+.contents {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 320px;
+    padding-top: 200px;
+}
+
+.main_contents {
+    width: 695px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.sub-contents {
+    width: 420px;
+    height: 86px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+
+.content_img_box {
+    padding-top: 32px;
+}
+
+.content_img {
+    width: 415px;
+    height: 766px;
+}
