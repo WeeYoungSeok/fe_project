@@ -1,6 +1,6 @@
 window.onscroll = function () {
-  var header = document.querySelector(".header_box");
-  var sticky = header.offsetTop;
+  let header = document.querySelector(".header_box");
+  let sticky = header.offsetTop;
 
   if (window.pageYOffset > sticky) {
     header.classList.add("fixed");
