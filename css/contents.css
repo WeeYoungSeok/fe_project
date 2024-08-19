@@ -1,6 +1,7 @@
 .content_box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main_contents_box {
@@ -48,6 +49,7 @@
 }
 
 .middle_contents_box {
+    width: 1920px;
     height: 550px;
     display: flex;
     align-items: center;
