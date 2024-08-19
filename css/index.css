@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +45,51 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 1920px;
+    height: 102px;
+    background-color: #F2E9D8;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+.header_logo {
+    width: 130px;
+    height: 40px;
+    padding-left: 320px;
+}
+
+.navbar_menu {
+    /* width: 205px;
+    height: 20px; */
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 756px;
+    padding-right: 49px;
+    font-weight: 400;
+}
+
+.download_box {
+    background-color: #D97652;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: none;
+    font-weight: 700;
+}
+
+.navbar_menu, .download_box {
+    font-size: 16px;
 }
