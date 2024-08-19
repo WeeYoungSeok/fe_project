@@ -1,0 +1,39 @@
+.header_box {
+    display: flex;
+    align-items: center;
+    width: 1920px;
+    height: 102px;
+    background-color: #F2E9D8;
+    transition: all 0.3s ease;
+}
+
+.header_box.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header_logo {
+    width: 130px;
+    height: 40px;
+    padding-left: 320px;
+}
+
+.navbar_menu {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 756px;
+    padding-right: 49px;
+    font-weight: 400;
+}
+
+.download_button {
+    width: 140px;
+    height: 50px;
+}
