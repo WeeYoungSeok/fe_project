@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    width: 1920px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1;
 }
@@ -67,8 +68,6 @@ a {
 }
 
 .navbar_menu {
-    /* width: 205px;
-    height: 20px; */
     width: auto;
     height: auto;
     display: flex;
@@ -95,6 +94,8 @@ a {
 }
 
 .content_box {
+    display: flex;
+    flex-direction: column;
 }
 
 .main_contents_box {
@@ -140,3 +141,46 @@ a {
     width: 415px;
     height: 766px;
 }
+
+.middle_contents_box {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    gap: 110px;
+}
+
+.middle_contents_img {
+    width: 660px;
+    height: 390px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: 50% 33%;
+}
+
+.middle_contents_text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.middle_contents_text_header,
+.middle_contents_text_sub {
+    width: 510px;
+}
+
+.middle_contents_text_header {
+    height: 135px;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.middle_contents_text_sub {
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
