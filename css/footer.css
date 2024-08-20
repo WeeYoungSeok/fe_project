@@ -1,0 +1,35 @@
+.footer_box {
+    width: 1920px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 826px;
+}
+
+.footer_logo_img {
+    width: 226px;
+    height: 70px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    height: 42px;
+}
+
+.footer_img_box {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;  
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #F29D52;
+}
+
+.footer_icon_img {
+    width: 24px;
+    height: 24px;
+}
