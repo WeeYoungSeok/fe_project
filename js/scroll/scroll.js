@@ -23,7 +23,6 @@ window.addEventListener("scroll", function () {
   // 현재 스크롤 위치 + 창 높이
   // +5는 자연스러움 떄문에 추가
   const buttonBottomPosition = scrollPosition + windowHeight + 5;
-  console.log(buttonBottomPosition);
 
   // 푸터가 보였다면
   if (buttonBottomPosition > footerTop) {
