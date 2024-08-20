@@ -1,0 +1,24 @@
+.scroll_top_box {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px #C4C4C4 solid;
+    opacity: 0.8;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    position: sticky;
+    bottom: 19px; /* 스크롤 시 화면 하단에서 20px 위에 고정 */
+    margin-left: auto; /* 오른쪽으로 고정 */
+    margin-right: 24px; /* 우측에서 20px 떨어진 위치 */
+}
+
+
+.scroll_top_img {
+    width: 40px;
+    height: 40px;
+}
