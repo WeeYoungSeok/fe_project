@@ -4,7 +4,7 @@ window.onscroll = function () {
   let sticky = header.offsetTop;
 
   header_logo.addEventListener("click", () => {
-    window.location.reload();s
+    window.location.href = "index.html";
   });
 
   if (window.pageYOffset > sticky) {
