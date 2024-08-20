@@ -1,6 +1,12 @@
 .header_box {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
     width: 1920px;
     height: 102px;
     background-color: #F2E9D8;
@@ -13,7 +19,6 @@
     left: 0;
     right: 0;
     z-index: 10001;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .header_logo {

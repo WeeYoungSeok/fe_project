@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/contents.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/map.css" />
-    <link rel="stylesheet" href="./css/subscribe.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/subscribe.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <script
       type="text/javascript"
       src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b368023ab0ada558460c961fcfa59892"
@@ -28,13 +28,15 @@
   </head>
   <body>
     <header class="header_box">
-      <img class="header_logo" src="./img/header/Logo-fin.svg" alt="로고" />
-      <ul class="navbar_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-      <button class="download_button button">Download</button>
+      <div class="header_container">
+        <img class="header_logo" src="./img/header/Logo-fin.svg" alt="로고" />
+        <ul class="navbar_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <button class="download_button button">Download</button>
+      </div>
     </header>
 
     <section class="content_box">
@@ -136,32 +138,48 @@
 
       <div class="subscribe_box">
         <div class="subscribe">
-            <div class="subscribe_text_box">
-                <p class="subscribe_text_top">Subscribe to our Blog post</p>
-                <p class="subscribe_text_sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text </p>
+          <div class="subscribe_text_box">
+            <p class="subscribe_text_top">Subscribe to our Blog post</p>
+            <p class="subscribe_text_sub">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+          <div class="email_box">
+            <div class="email_text_box">
+              <img
+                class="email_img"
+                src="./img/subscribe/mail.svg"
+                alt="구독 이메일 이미지"
+              />
+              <input
+                type="text"
+                id="img"
+                class="email_input"
+                placeholder="Enter your e-mail address"
+              />
             </div>
-            <div class="email_box">
-                <div class="email_text_box">
-                    <img class="email_img" src="./img/subscribe/mail.svg" alt="구독 이메일 이미지">
-                    <input type="text" id="img" class="email_input" placeholder="Enter your e-mail address"/>
-                </div>
-                <button class="subscribe_button button">Subscribe</button>
-            </div>
+            <button class="subscribe_button button">Subscribe</button>
+          </div>
         </div>
         <div class="subscribe_img_box">
-            <img src="./img/subscribe/subscribe.jpeg" alt="구독 이미지" class="subscribe_img">
-            <div class="overlay"></div>
+          <img
+            src="./img/subscribe/subscribe.jpeg"
+            alt="구독 이미지"
+            class="subscribe_img"
+          />
+          <div class="overlay"></div>
         </div>
       </div>
     </section>
-    
+
     <footer class="footer_box">
-        <img class="footer_logo_img" src="./img/header/Logo-fin.svg" alt="푸터 로고 이미지">
-        <div class="footer_icon">
-
-        </div>
+      <img
+        class="footer_logo_img"
+        src="./img/header/Logo-fin.svg"
+        alt="푸터 로고 이미지"
+      />
+      <div class="footer_icon"></div>
     </footer>
-
   </body>
 </html>
