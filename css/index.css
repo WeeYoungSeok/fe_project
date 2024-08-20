@@ -67,6 +67,7 @@ a {
     border-radius: 40px;
     border: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .navbar_menu, .button {

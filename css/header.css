@@ -25,6 +25,7 @@
     width: 130px;
     height: 40px;
     padding-left: 320px;
+    cursor: pointer;
 }
 
 .navbar_menu {

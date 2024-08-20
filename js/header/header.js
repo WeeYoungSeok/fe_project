@@ -1,6 +1,11 @@
 window.onscroll = function () {
   let header = document.querySelector(".header_box");
+  let header_logo = document.querySelector(".header_logo");
   let sticky = header.offsetTop;
+
+  header_logo.addEventListener("click", () => {
+    window.location.reload();s
+  });
 
   if (window.pageYOffset > sticky) {
     header.classList.add("fixed");
