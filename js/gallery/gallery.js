@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let img_container = document.querySelector(".gallery_img_container");
+  let show_more_button = document.querySelector(".more_button");
 
   for (let i = 0; i < 2; i++) {
     let img_box = document.createElement("div");
@@ -12,4 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
       img_box.appendChild(img);
     }
   }
+
+  show_more_button.addEventListener("click", () => {
+      let img_box = document.createElement("div");
+      img_box.className = "gallery_img_box";
+      img_container.appendChild(img_box);
+      for (let i = 0; i < 3; i++) {
+        let img = document.createElement("img");
+        img.src = "./img/gallery/cat_" + i + ".jpeg";
+        img.className = "gallery_img";
+        img_box.appendChild(img);
+      }
+  })
 });
