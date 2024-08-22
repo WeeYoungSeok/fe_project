@@ -33,12 +33,14 @@
     <header class="header_box">
       <div class="header_container">
         <img class="header_logo" src="./img/header/Logo-fin.svg" alt="로고" />
-        <ul class="navbar_menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-        <button class="download_button button">Download</button>
+        <div class="navbar_box">
+          <ul class="navbar_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+          <button class="download_button button">Download</button>
+        </div>
         <img class="m_navbar  " src="./img/header/menu.svg" alt="모바일 메뉴바">
       </div>
     </header>
@@ -47,8 +49,8 @@
       <div class="main_contents_box">
         <div class="contents">
           <p class="main_contents">
-            Lorem Ipsum is simply
-            <br>dummy text<br> of the printing and
+            Lorem Ipsum is simply 
+            <br /> dummy text<br class="m_br"> of the printing and
           </p>
           <p class="sub-contents">
             Lorem Ipsum is simply dummy text<br class="m_br"/> of the printing and typesetting
@@ -61,24 +63,26 @@
         <div class="content_img_box">
           <img
             class="content_img"
-            src="./img/contents/img_cat_png.png"
+            src="./img/contents/img_cat.png"
             alt="컨텐츠 이미지"
           />
         </div>
       </div>
 
       <div class="middle_contents_box">
-        <img
-          class="middle_contents_img"
-          src="./img/contents/img_4.jpeg"
-          alt="컨텐츠 탑 이미지"
-        />
+        <div class="middle_contents_img_box">
+          <img
+            class="middle_contents_img"
+            src="./img/contents/img_4.jpeg"
+            alt="컨텐츠 탑 이미지"
+          />
+        </div>
         <div class="middle_contents_text_box">
           <p class="middle_contents_text_header">
             Lorem Ipsum is simply dummy text of the printing and dummy text
           </p>
           <p class="middle_contents_text_sub">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+            Lorem Ipsum is simply dummy text of the printing<br class="m_br"/> and typesetting
             industry.
           </p>
         </div>
@@ -87,15 +91,16 @@
       <div class="gallery_box">
         <div class="gallery_contents">
           <p class="gallery_contents_top">
-            dummy text of the printing and dummy
+            dummy text of the printing<br class="m_g_br"/> and dummy
           </p>
           <p class="gallery_contents_sub">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown
+            Lorem Ipsum is simply <span class="contents_bold">dummy text</span> of the<br class="m_g_br"/> printing and typesetting
+            industry.<br class="m_g_br"/> Lorem Ipsum has been the industry's<br class="m_g_br"/> standard dummy text
+            ever since the 1500s,<br class="m_g_br"/> when an unknown
           </p>
         </div>
-        <div class="gallery_img_container"></div>
+        <div class="gallery_img_container">
+        </div>
 
         <div class="more_box">
           <p class="continue">Continue exploring HODU</p>
