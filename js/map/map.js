@@ -37,7 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("zoomOutButton").onclick = zoomOut;
   document.getElementById("resetButton").onclick = resetMap;
 
-  map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMRIGHT, true);
+  var windowWidth = window.innerWidth;
+  if (windowWidth >= 541) {
+    map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMRIGHT, true);
+  } else {
+    map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMLEFT, true);
+  }
 
   marker.setMap(map);
 
@@ -58,4 +63,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // 모바일 커스텀 스카이뷰 컨트롤러 
+
+    // 지도 타입 변경 함수
+    function changeMapType(mapType) {
+      if (mapType === "roadmap") {
+        map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP); // 기본 지도
+        document.getElementById("roadmapButton").classList.add("active");
+        document.getElementById("skyviewButton").classList.remove("active");
+      } else if (mapType === "skyview") {
+        map.setMapTypeId(kakao.maps.MapTypeId.HYBRID); // 스카이뷰
+        document.getElementById("roadmapButton").classList.remove("active");
+        document.getElementById("skyviewButton").classList.add("active");
+      }
+    }
+  
+    document.getElementById("roadmapButton").onclick = function () {
+      changeMapType("roadmap");
+    };
+  
+    document.getElementById("skyviewButton").onclick = function () {
+      changeMapType("skyview");
+    };
 });
