@@ -1,9 +1,9 @@
 /* 모바일 우선 적용 */
 .header_box {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  max-width: 390px;
+  /* max-width: 390px; */
   height: 76px;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-width: 390px;
+  /* max-width: 390px; */
   background-color: #f2e9d8;
   transition: all 0.3s ease;
 }
