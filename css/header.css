@@ -53,6 +53,7 @@
   .header_box {
     background-color: #f2e9d8;
     position: sticky;
+    min-width: 650px;
     width: 100%;
     top: 0;
     max-width: 1920px;
