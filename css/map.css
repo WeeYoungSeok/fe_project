@@ -51,7 +51,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    z-index: 10;
+    z-index: 7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,7 @@
     right: 6px;
     width: 18px;
     overflow: visible;
-    z-index: 1000;
+    z-index: 7;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -256,7 +256,7 @@
     right: 5px;
     width: 36px;
     overflow: visible;
-    z-index: 1000;
+    z-index: 7;
     display: flex;
     flex-direction: column;
     gap: 10px;
