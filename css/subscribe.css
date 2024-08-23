@@ -14,7 +14,6 @@
   .subscribe {
     width: 90vw;
     max-width: 326px;
-    height: 348px;
     max-height: 348px;
     background-color: #263140;
     border-radius: 18px;
@@ -25,12 +24,13 @@
     z-index: 2;
     position: relative;
     margin: 0 auto;
+    padding-bottom: 8.21%;
   }
 
   .subscribe_text_box {
+    margin-left: 9.81%;
+    margin-right: 9.81%;
     margin-top: 36px;
-    width: 262px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -100,26 +100,20 @@
     font-weight: 700;
   }
 
-  .subscribe_button {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 700;
-  }
-
-
   .subscribe_img_box {
     position: relative;
-    bottom: 68px;
+    bottom: 13.07%;
     z-index: 1;
+    max-height: 240px;
     background-color: #f2e9d8;
   }
 
   .subscribe_img {
     width: 100%;
-    height: 240px;
     object-fit: cover;
     object-position: 50% 25%;
     display: block;
+    aspect-ratio: 13 / 8;
   }
 
   .subscribe_img_box .overlay {
