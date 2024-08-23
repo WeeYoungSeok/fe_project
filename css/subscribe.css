@@ -361,3 +361,7 @@
         bottom: 150px;
     }
 }
+
+.email_input {
+    padding: 0;
+}
