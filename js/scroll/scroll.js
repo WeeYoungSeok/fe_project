@@ -26,19 +26,13 @@ window.addEventListener("scroll", function () {
 
   // 푸터가 보였다면
   if (buttonBottomPosition > footerTop) {
-    scrollTopBtn.style.position = "sticky";
-    if (buttonBottomPosition < 4217) {
-      scrollTopBtn.style.bottom = `${
+    scrollTopBtn.style.position = "fixed";
+    scrollTopBtn.style.bottom = `${
         windowHeight - (footerTop - scrollPosition) + 19
       }px`;
-    } else {
-      scrollTopBtn.style.bottom = `${
-        windowHeight - (footerTop - scrollPosition) + 19 - 17
-      }px`;
-    }
   } else {
     // 푸터가 보이지 않는다면
-    scrollTopBtn.style.position = "sticky";
+    scrollTopBtn.style.position = "fixed";
     scrollTopBtn.style.bottom = "19px";
   }
 });

@@ -198,7 +198,6 @@
     width: 100%;
     max-width: 1920px;
     min-width: 650px;
-    height: 720px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -216,7 +215,7 @@
 
   .map_box_text_top {
     width: 263px;
-    height: 35px;
+    height: 45px;
     font-size: 36px;
     line-height: 45px;
     font-weight: 700;
@@ -231,6 +230,7 @@
   }
 
   .map_container {
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;

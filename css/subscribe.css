@@ -4,6 +4,7 @@
     }
 
   .subscribe_box {
+    height: 520px;
     width: 100%;
     max-width: 390px;
     margin-top: 80px;
