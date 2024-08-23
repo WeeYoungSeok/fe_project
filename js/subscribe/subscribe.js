@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let thankBoxBool = false;
+  if (thankBoxBool) {
+    thankBox.style.display = "flex"; // .thank_box를 화면에 표시
+  }
+
   function emailCheck(email_address) {
     email_regex = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]{2,4}$/i;
     if (!email_regex.test(email_address)) {
@@ -23,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     event.preventDefault(); // 폼 제출을 막기 위해 기본 동작 방지
     thankBox.style.display = "flex"; // .thank_box를 화면에 표시
+    thankBoxBool = !thankBoxBool;
   });
 
   // 윈도우 클릭 시 .thank_box 외부 클릭 감지
@@ -45,9 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 새로고침을 원하지 않는다면 아래 코드 주석 풀기
     const email = document.getElementById("email");
     const email_value = email.value;
-    console.log(email_value);
-    
-    
 
     fetch("./index.html?email=" + email_value, {
       method: 'GET',
