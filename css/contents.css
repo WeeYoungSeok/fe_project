@@ -112,21 +112,21 @@
       }
 
       .middle_contents_text_box {
-        width: 90vw; /* Viewport 너비의 90% */
-        max-width: 326px; /* 최대 너비 제한 */
+        width: 90vw;
+        max-width: 326px;
         display: flex;
         flex-direction: column;
         gap: 20px;
       }
 
       .middle_contents_img_box {
-        width: 90vw; /* Viewport 너비의 90% */
-        max-width: 326px; /* 최대 너비 제한 */
-        max-height: 190px; /* 최대 높이 제한 */
+        width: 90vw;
+        max-width: 326px;
+        max-height: 190px; 
       }
     
       .middle_contents_img {
-        aspect-ratio: 163 / 95; /* 비율 설정 */
+        aspect-ratio: 163 / 95; 
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
         width: 100%;
         border-radius: 18px;

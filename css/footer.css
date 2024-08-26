@@ -33,7 +33,7 @@
     
     .footer_img_box {
         display: flex;
-        justify-content: center; /* 수평 가운데 정렬 */
+        justify-content: center;
         align-items: center;  
         width: 32px;
         height: 32px;
@@ -106,7 +106,7 @@
 
 .footer_img_box {
     display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
+    justify-content: center;
     align-items: center;  
     width: 42px;
     height: 42px;

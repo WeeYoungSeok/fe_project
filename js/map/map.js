@@ -1,43 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
-  var options = {
-    //지도를 생성할 때 필요한 기본 옵션
-    center: new kakao.maps.LatLng(33.4423464, 126.5714548), //지도의 중심좌표.
-    level: 4, //지도의 레벨(확대, 축소 정도)
+  let container = document.getElementById("map"); 
+  let options = {
+    center: new kakao.maps.LatLng(33.4423464, 126.5714548), 
+    level: 4, 
   };
 
-  var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-  // 지도를 클릭한 위치에 표출할 마커입니다
-  var marker = new kakao.maps.Marker({
-    // 지도 중심좌표에 마커를 생성합니다
+  let map = new kakao.maps.Map(container, options); 
+  let marker = new kakao.maps.Marker({
     position: map.getCenter(),
   });
 
-  var mapTypeControl = new kakao.maps.MapTypeControl();
+  let mapTypeControl = new kakao.maps.MapTypeControl();
 
-  // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
-  // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
   map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 
   function zoomIn() {
-    map.setLevel(map.getLevel() - 1, { animate: true }); // 애니메이션 활성화
+    map.setLevel(map.getLevel() - 1, { animate: true }); 
   }
 
   function zoomOut() {
-    map.setLevel(map.getLevel() + 1, { animate: true }); // 애니메이션 활성화
+    map.setLevel(map.getLevel() + 1, { animate: true });
   }
 
   function resetMap() {
-    map.setCenter(new kakao.maps.LatLng(33.4423464, 126.5714548)); // 초기 중심 좌표로 이동
-    // map.setLevel(4, {animate: true}); // 초기 확대 레벨로 설정
+    map.setCenter(new kakao.maps.LatLng(33.4423464, 126.5714548)); 
   }
 
   document.getElementById("zoomInButton").onclick = zoomIn;
   document.getElementById("zoomOutButton").onclick = zoomOut;
   document.getElementById("resetButton").onclick = resetMap;
 
-  var windowWidth = window.innerWidth;
+  let windowWidth = window.innerWidth;
   if (windowWidth >= 541) {
     map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMRIGHT, true);
   } else {
@@ -46,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   marker.setMap(map);
 
-  // 풀스크린 기능 추가
   document.getElementById("full_screen_button").onclick = function () {
     toggleFullscreen(container);
   };
@@ -63,16 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // 모바일 커스텀 스카이뷰 컨트롤러 
-
-    // 지도 타입 변경 함수
     function changeMapType(mapType) {
       if (mapType === "roadmap") {
-        map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP); // 기본 지도
+        map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
         document.getElementById("roadmapButton").classList.add("active");
         document.getElementById("skyviewButton").classList.remove("active");
       } else if (mapType === "skyview") {
-        map.setMapTypeId(kakao.maps.MapTypeId.HYBRID); // 스카이뷰
+        map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
         document.getElementById("roadmapButton").classList.remove("active");
         document.getElementById("skyviewButton").classList.add("active");
       }
