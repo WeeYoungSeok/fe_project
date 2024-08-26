@@ -1,0 +1,241 @@
+.gallery_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.gallery_contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.gallery_contents_top {
+  text-align: center;
+  color: #d97652;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.gallery_contents_sub {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contents_bold {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #d97652;
+}
+
+.gallery_img_container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.gallery_img_box {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: auto;
+}
+
+.more_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 60px;
+}
+
+.continue {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.more_button {
+  text-align: center;
+  width: 143px;
+  height: 50px;
+}
+
+@media screen and (max-width: 540px) {
+  .gallery_img_box {
+    flex-direction: column;
+    width: 90vw; /* Viewport 너비의 90% */
+    max-width: 326px; /* 최대 너비 제한 */
+  }
+
+  .gallery_img {
+    aspect-ratio: 1 / 1; /* 비율 설정 */
+    width: 100%;
+    /* height: 326px; */
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .gallery_contents {
+    width: 90vw; /* Viewport 너비의 90% */
+    max-width: 326px; /* 최대 너비 제한 */
+  }
+
+  ._hr {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    height: 1px;
+  }
+
+  hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #c4c4c4;
+    width: 90vw;
+    max-width: 326px;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .gallery_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .gallery_contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .gallery_contents_top {
+    text-align: center;
+    width: 875px;
+    height: 60px;
+    color: #d97652;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+
+  .gallery_contents_sub {
+    text-align: center;
+    width: 710px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .gallery_img_container {
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    /* height: 1204px; */
+  }
+
+  .gallery_img_box {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px; /* 적절한 최대 너비 설정 */
+    gap: 73px;
+  }
+
+  .gallery_img {
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+    width: 378px;
+    height: 378px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .more_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    margin-top: 100px;
+  }
+
+  .continue {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .more_button {
+    text-align: center;
+    width: 143px;
+    height: 50px;
+  }
+
+  ._hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 320px;
+    box-sizing: border-box;
+  }
+
+  hr {
+    margin: 0;
+    height: 1px;
+    padding-left: calc(16.67%);
+    padding-right: calc(16.67%);
+    max-width: 1280px;
+    width: calc(100% - 32.34%);
+    min-width: 378px;
+    border: none;
+    background-color: #c4c4c4;
+  }
+
+  .m_g_br {
+    display: none;
+  }
+}
+
+/* 랩 되고 나서 */
+@media screen and (max-width: 1350px) and (min-width: 541px) {
+  .gallery_img_box {
+    justify-content: center;
+    gap: 73px;
+  }
+  .m_g_br {
+    display: block;
+  }
+
+  .gallery_contents_top,
+  .gallery_contents_sub {
+    height: auto;
+  }
+}

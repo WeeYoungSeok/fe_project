@@ -1,0 +1,433 @@
+@media screen and (max-width: 540px) {
+    .s_br {
+        display: block;
+    }
+
+  .subscribe_box {
+    z-index: 8;
+    height: 520px;
+    width: 100%;
+    max-width: 390px;
+    margin-top: 80px;
+  }
+
+  .subscribe {
+    width: 90vw;
+    max-width: 326px;
+    max-height: 348px;
+    background-color: #263140;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 8.21%;
+  }
+
+  .subscribe_text_box {
+    margin-left: 9.81%;
+    margin-right: 9.81%;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subscribe_text_top {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .subscribe_text_sub {
+    color: #f2e9d8;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+
+  .email_box {
+    width: 262px;
+    height: 100px;
+  }
+
+  .email_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .email_text_box {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    border-radius: 60px;
+  }
+
+  .email_img {
+    margin-left: 16px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .email_input {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    width: 144px;
+    height: 16px;
+    border: none;
+    outline: none;
+  }
+
+  .subscribe_button {
+    margin-left: 145px;
+    padding: 0;
+    width: 115px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  .subscribe_img_box {
+    position: relative;
+    bottom: 13.07%;
+    z-index: 1;
+    max-height: 240px;
+    background-color: #f2e9d8;
+  }
+
+  .subscribe_img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    display: block;
+    aspect-ratio: 13 / 8;
+  }
+
+  .subscribe_img_box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2e9d8;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .m_t_br {
+    display: block;
+  }
+
+  .thank_box {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-image: url("../img/subscribe/thank_background_img.png");
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thank_img {
+    margin-top: 40px;
+    width: 60px;
+    height: 62px;
+  }
+
+  .thank_text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .thank_text_top {
+    width: 126px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #d97652;
+  }
+
+  .thank_text_sub {
+    width: 189px;
+    height: 36px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+    .thank_button {
+      padding: 0;
+      padding: 11px 24px 11px 24px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 28px;
+    }
+  
+}
+
+@media screen and (min-width: 541px) {
+    .s_br {
+        display: none;
+    }
+
+  .subscribe_box {
+    z-index: 8;
+    width: 100%;
+    max-width: 1920px;
+    height: 440px;
+    margin-top: 80px;
+  }
+
+  .subscribe {
+    width: 100%;
+    max-width: 1280px;
+    height: 200px;
+    background-color: #263140;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .subscribe_text_box {
+    width: 471px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-left: 58px;
+  }
+
+  .subscribe_text_top {
+    color: #ffffff;
+    width: 448px;
+    height: 45px;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+
+  .subscribe_text_sub {
+    color: #f2e9d8;
+    width: 471px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .email_box {
+    margin-right: 58px;
+    background-color: #ffffff;
+    width: 530px;
+    height: 60px;
+    border-radius: 60px;
+  }
+
+  .email_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .email_text_box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 28px;
+  }
+
+  .email_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .email_input {
+    width: 184px;
+    height: 20px;
+    border: none;
+    outline: none;
+  }
+
+  .subscribe_button {
+    width: 135px;
+    height: 50px;
+    margin-right: 6px;
+  }
+
+  .subscribe_button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  .subscribe_img_box {
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+    width: 100%;
+    height: 340px;
+    background-color: #f2e9d8;
+  }
+
+  .subscribe_img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: 50% 37%;
+    display: block;
+  }
+
+  .subscribe_img_box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2e9d8;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .m_t_br {
+    display: none;
+  }
+
+  .thank_box {
+    display: none;
+    width: 600px;
+    height: 400px;
+    background-image: url("../img/subscribe/thank_background_img.png");
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thank_img {
+    margin-top: 60px;
+    width: 110px;
+    height: 112px;
+  }
+
+  .thank_text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .thank_text_top {
+    width: 212px;
+    height: 46px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #d97652;
+  }
+
+  .thank_text_sub {
+    width: 365px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .thank_button {
+    width: 183px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 38px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 541px){
+  .thank_box {
+    display: none;
+    width: 600px;
+    height: 400px;
+    background-image: url("../img/subscribe/thank_background_img.png");
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 400px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 541px) {
+  .subscribe {
+    width: 80vw;
+    min-width: 1000 px;
+  }
+}
+
+@media screen and (max-width: 1205px) and (min-width: 541px) {
+  .subscribe {
+    width: 80vw;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: column;
+    min-width: 600px;
+  }
+
+  .subscribe_text_box,
+  .email_box {
+    margin: 0;
+  }
+
+  .subscribe_img_box {
+        bottom: 150px;
+    }
+}
+
+.email_input {
+    padding: 0;
+}

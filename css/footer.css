@@ -1,0 +1,126 @@
+
+@media screen and (max-width: 541px) {
+    .footer_box {
+        width: 100%;
+        max-width: 390px;
+        height: 178px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    
+    .footer_container {
+        width: 176px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 58px;
+        margin-left: 20px;
+    }
+    
+    .footer_logo_img {
+        width: 112px;
+        height: 34px;
+    }
+    
+    .footer_icon {
+        display: flex;
+        justify-content: space-between;
+        width: 176px;
+        height: 32px;
+    }
+    
+    .footer_img_box {
+        display: flex;
+        justify-content: center; /* 수평 가운데 정렬 */
+        align-items: center;  
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #F29D52;
+    }
+    
+    .footer_icon_img {
+        width: 18.29px;
+        height: 18.29px;
+        cursor: pointer;
+    }
+
+    .f_nav_box {
+        width: 84px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 16px;
+        margin-right: 22px;
+    }
+    .f_nav {
+        color: #767676;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    }
+
+
+
+
+
+@media screen and (min-width: 541px) {
+.footer_box {
+    width: 100%;
+    min-width: 800px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footer_container {
+    width: 1920px;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer_logo_img {
+    margin-left: 320px;
+    width: 226px;
+    height: 70px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    height: 42px;
+    margin-right: 320px;
+}
+
+.footer_img_box {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;  
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #F29D52;
+}
+
+.footer_icon_img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.f_nav_box {
+    display: none;
+}
+}
