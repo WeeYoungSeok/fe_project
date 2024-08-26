@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let footer_img_container = document.querySelector(".footer_icon");
+  const footer_img_container = document.querySelector(".footer_icon");
 
   let img_src_prefix = "./img/footer/";
   let img_src_subfix = ".png";
