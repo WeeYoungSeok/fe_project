@@ -71,6 +71,7 @@
 }
 
   .m_arrow_rigth_img {
+    opacity: 1;
     position: absolute;
     top: 22px;
     left: 20px;
@@ -156,6 +157,10 @@
 
   .m_navbar {
     display: none;
+  }
+
+  .m_arrow_rigth_img {
+    opacity: 0;
   }
 
   .download_button {
