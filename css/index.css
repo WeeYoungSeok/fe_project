@@ -33,8 +33,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    width: 100%;
-    margin: 0 auto;
+    /* width: 100%; */
+    /* margin: 0 auto; */
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1;
 }
@@ -49,8 +49,9 @@ body {
 
 @media screen and (min-width: 541px) {
     body {
-            width: 100%;
-            max-width: 1920px;
+            /* width: 100%; */
+            /* max-width: 1920px; */
+            /* min-width: 650px; */
 		}
 }
 

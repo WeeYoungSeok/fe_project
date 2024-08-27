@@ -1,15 +1,14 @@
 .gallery_box {
   width: 100%;
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 60px;
 }
 
 .gallery_contents {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
 }
 
@@ -39,7 +38,6 @@
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 32px;
   width: 100%;
 }
@@ -54,7 +52,6 @@
 .more_box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 28px;
   margin-top: 60px;
 }
@@ -69,6 +66,24 @@
   text-align: center;
   width: 143px;
   height: 50px;
+}
+
+@media screen and (max-width: 540px) {
+  .gallery_box {
+    align-items: center;
+  }
+
+  .gallery_img_container {
+    align-items: center;
+  }
+
+  .gallery_contents {
+    align-items: center;
+  }
+
+  .more_box {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -114,9 +129,9 @@
 @media screen and (min-width: 541px) {
   .gallery_box {
     width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 120px;
   }
 
@@ -124,11 +139,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
   }
 
   .gallery_contents_top {
+    margin-left: 523px;
     text-align: center;
     width: 875px;
     height: 60px;
@@ -139,6 +154,7 @@
   }
 
   .gallery_contents_sub {
+    margin-left: 605px;
     text-align: center;
     width: 710px;
     height: 42px;
@@ -149,21 +165,24 @@
 
   .gallery_img_container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1920px;
+    padding: 0;
+    margin: 0;
     margin-top: 88px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 72px;
+    /* align-items: center; */
+    /* gap: 72px; */
   }
 
   .gallery_img_box {
     flex-wrap: wrap;
-    width: 100%;
+    width: 1280px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    max-width: 1280px;
-    gap: 73px;
+    margin-left: 320px;
   }
 
   .gallery_img {
@@ -175,28 +194,32 @@
   }
 
   .more_box {
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 28px;
     margin-top: 100px;
   }
 
   .continue {
+    margin-left: 815px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
   }
 
   .more_button {
+    margin-left: 888.5px;
     text-align: center;
     width: 143px;
     height: 50px;
   }
 
   hr {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 80px;
+    margin-left: 320px;
     width: 100%;
     max-width: 1280px;
     height: 1px;
