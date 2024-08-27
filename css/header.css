@@ -72,6 +72,7 @@
   }
 
   .m_arrow_rigth_img {
+    display: block;
     opacity: 1;
     position: absolute;
     top: 22px;
@@ -107,9 +108,10 @@
 
 @media screen and (min-width: 541px) {
   .header_box {
+    margin: 0 auto;
     background-color: #f2e9d8;
     position: sticky;
-    min-width: 800px;
+    min-width: 1500px;
     width: 100%;
     top: 0;
     max-width: 1920px;
@@ -124,13 +126,14 @@
   .header_container {
     box-sizing: border-box;
     max-width: 1920px;
+    min-width: 1500px;
     width: 1920px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
     transition: all 0.3s ease;
-    gap: 49px;
+    gap: 756px;
   }
 
   .header_logo {
@@ -165,7 +168,7 @@
   }
 
   .m_arrow_rigth_img {
-    opacity: 0;
+    display: none;
   }
 
   .download_button {
