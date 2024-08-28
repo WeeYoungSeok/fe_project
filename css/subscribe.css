@@ -1,4 +1,4 @@
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 770px) {
     .s_br {
         display: block;
     }
@@ -191,23 +191,27 @@
   
 }
 
-@media screen and (min-width: 541px) {
+@media screen and (min-width: 771px) {
     .s_br {
         display: none;
     }
 
   .subscribe_box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 8;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1280px;
     height: 440px;
     margin-top: 80px;
   }
 
   .subscribe {
-    margin: 0;
+    box-sizing: border-box;
+    padding: 50px 58px;
     width: 100%;
-    max-width: 1280px;
     height: 200px;
     background-color: #263140;
     border-radius: 30px;
@@ -216,8 +220,6 @@
     justify-content: space-between;
     z-index: 2;
     position: relative;
-    gap: 10px;
-    margin-left: 320px;
   }
 
   .subscribe_text_box {
@@ -227,7 +229,6 @@
     flex-direction: column;
     gap: 18px;
     flex-wrap: wrap;
-    margin-left: 58px;
   }
 
   .subscribe_text_top {
@@ -249,7 +250,6 @@
   }
 
   .email_box {
-    margin-right: 58px;
     background-color: #ffffff;
     width: 530px;
     height: 60px;
@@ -257,10 +257,10 @@
   }
 
   .email_form {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
   }
 
   .email_text_box {
@@ -298,7 +298,7 @@
     position: relative;
     bottom: 100px;
     z-index: 1;
-    width: 100%;
+    width: 1920px;
     height: 340px;
     background-color: #f2e9d8;
   }
@@ -385,7 +385,23 @@
   }
 }
 
-@media screen and (max-width: 850px) and (min-width: 541px){
+@media screen and (min-width: 771px) {
+  @media screen and (max-width: 1200px) {
+    .subscribe {
+      background-color: #263140;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      position: relative;
+      gap: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 771px){
   .thank_box {
     display: none;
     width: 600px;
@@ -400,35 +416,4 @@
     left: 400px;
     transform: translate(-50%, -50%);
   }
-}
-
-@media screen and (max-width: 1600px) and (min-width: 541px) {
-  /* .subscribe {
-    width: 80vw;
-    min-width: 1000 px;
-  } */
-}
-
-@media screen and (max-width: 1205px) and (min-width: 541px) {
-  /* .subscribe {
-    width: 80vw;
-    padding: 50px 0;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    flex-direction: column;
-    min-width: 600px;
-  } */
-
-  .subscribe_text_box,
-  .email_box {
-    /* margin: 0; */
-  }
-
-  .subscribe_img_box {
-        /* bottom: 150px; */
-    }
-}
-
-.email_input {
-    padding: 0;
 }
