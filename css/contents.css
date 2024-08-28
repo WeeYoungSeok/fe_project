@@ -107,27 +107,23 @@
       }
 
       .middle_contents_box {
+        width: calc(100% - 64px); /* padding 32px씩 고려한 너비 조정 */
         margin-top: 40px;
         flex-direction: column;
         gap: 40px;
       }
 
       .middle_contents_text_box {
-        width: 90vw;
-        max-width: 326px;
         display: flex;
         flex-direction: column;
         gap: 20px;
       }
 
       .middle_contents_img_box {
-        width: 90vw;
-        max-width: 326px;
-        max-height: 190px; 
       }
     
       .middle_contents_img {
-        aspect-ratio: 163 / 95; 
+        aspect-ratio: 326 / 190; 
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
         width: 100%;
         border-radius: 18px;
