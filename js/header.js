@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".navbar_box").classList.toggle("active");
     document.querySelector(".m_overlay").classList.toggle("active");
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";  // 추가된 부분
   });
 
   let removeActive = () => {
     document.querySelector(".navbar_box").classList.remove("active");
     document.querySelector(".m_overlay").classList.remove("active");
     document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";  // 추가된 부분
   };
 
   document
