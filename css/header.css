@@ -131,6 +131,7 @@
   .header_logo {
     width: 130px;
     height: 40px;
+    cursor: pointer;
   }
 
   .navbar_box {
