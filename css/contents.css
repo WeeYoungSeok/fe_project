@@ -107,7 +107,7 @@
       }
 
       .middle_contents_box {
-        width: calc(100% - 64px); /* padding 32px씩 고려한 너비 조정 */
+        width: calc(100% - 64px);
         margin-top: 40px;
         flex-direction: column;
         gap: 40px;
@@ -247,7 +247,6 @@
     border-radius: 30px;
     object-fit: cover;
     object-position: 50% 33%;
-    /* margin-left: 320px; */
   }
 
   .middle_contents_img {

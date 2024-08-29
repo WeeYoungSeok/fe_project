@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 770px) {
   .gallery_box {
-    width: calc(100% - 64px); /* padding 32px씩 고려한 너비 조정 */
+    width: calc(100% - 64px);
     align-items: center;
   }
 
@@ -189,7 +189,6 @@
 
   .more_box {
     width: 100%;
-    /* max-width: 1920px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,14 +197,12 @@
   }
 
   .continue {
-    /* margin-left: 815px; */
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
   }
 
   .more_button {
-    /* margin-left: 888.5px; */
     text-align: center;
     width: 143px;
     height: 50px;
@@ -214,13 +211,11 @@
   hr {
     margin: 0;
     margin-top: 80px;
-    /* margin-left: 320px; */
     width: 100%;
     max-width: 1280px;
     height: 1px;
     border: none;
-    background-color: rebeccapurple;
-    /* background-color: #c4c4c4; */
+    background-color: #c4c4c4;
   }
 
   .m_g_br {

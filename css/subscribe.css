@@ -4,12 +4,10 @@
     }
 
   .subscribe_box {
-     /* padding 32px씩 고려한 너비 조정 */
     z-index: 8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 520px; */
     margin-top: 80px;
     margin-bottom: -68px;
   }
@@ -29,8 +27,6 @@
 
   .subscribe_text_box {
     width: calc(100% - 64px);
-    /* margin-left: 9.81%; */
-    /* margin-right: 9.81%; */
     margin-top: 36px;
     display: flex;
     flex-direction: column;
