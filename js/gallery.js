@@ -14,15 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  let k = 6
   show_more_button.addEventListener("click", () => {
     const img_box = document.createElement("div");
       img_box.className = "gallery_img_box";
       img_container.appendChild(img_box);
-      for (let i = 0; i < 3; i++) {
+      for (let i = k; i < k + 3; i++) {
         let img = document.createElement("img");
         img.src = "./img/gallery/cat_" + i + ".jpeg";
         img.className = "gallery_img";
         img_box.appendChild(img);
+      }
+      k += 3
+      if (k == 15) {
+        k = 6
       }
   })
 });
