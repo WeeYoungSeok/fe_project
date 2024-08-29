@@ -144,7 +144,7 @@
   .thank_box {
     z-index: 100003;
     display: none;
-    width: 300px;
+    width: calc(100% - 64px);
     height: 300px;
     background-image: url("../img/subscribe/thank_background_img.png");
     flex-direction: column;
