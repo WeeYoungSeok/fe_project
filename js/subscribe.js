@@ -4,13 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     thankBox.style.display = "flex";
   }
 
+  function isEmpty(email_address) {
+    return !(email_address == null || email_address === "");
+
+  }
+
   function emailCheck(email_address) {
-    email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
-    if (!email_regex.test(email_address)) {
-      return false;
-    } else {
-      return true;
-    }
+    let email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+    return email_regex.test(email_address);
   }
 
   const subscribeButton = document.querySelector(".subscribe_button");
@@ -20,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
   subscribeButton.addEventListener("click", function (event) {
     const email = document.getElementById("email");
     const emailValeu = email.value;
+    if (!isEmpty(emailValeu)) {
+      alert("이메일을 입력해주세요.");
+      event.preventDefault(); 
+      return; 
+    }
+
     if (!emailCheck(emailValeu)) {
       alert("올바른 이메일을 입력해주세요.");
       event.preventDefault(); 
