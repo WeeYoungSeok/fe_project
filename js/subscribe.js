@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(data);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
       closeModal();
       email.value = "";
