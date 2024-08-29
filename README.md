@@ -10,6 +10,9 @@
 - 메인화면
 
   ![화면 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fw0zld%2FbtsJemsP6Ir%2F4cBrsJGus9coxasdcN9yT1%2Fimg.png)
+- 사용된 기술
+    - javsscript
+    - html/css
 
 <br>
 
