@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("resize", function () {
     let windowWidth = window.innerWidth;
-    if (windowWidth >= 390) {
+    if (windowWidth >= 501) {
       map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMRIGHT, true);
     } else {
       map.setCopyrightPosition(kakao.maps.CopyrightPosition.BOTTOMLEFT, true);
